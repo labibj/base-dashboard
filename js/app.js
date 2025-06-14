@@ -1,0 +1,82 @@
+// Load the Visualization API and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['Mushrooms', 3],
+          ['Onions', 1],
+          ['Olives', 1],
+          ['Zucchini', 1],
+          ['Pepperoni', 2]
+        ]);
+
+        // Set chart options
+        var options = {'title':'How Much Pizza I Ate Last Night',
+                       'width':400,
+                       'height':300};
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+
+
+      const ctx = document.getElementById('myChart');
+
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+                label: '# of Votes',
+                data: [12, 19, 3, 5, 2, 3],
+                borderWidth: 1
+            }]
+            },
+            options: {
+            scales: {
+                y: {
+                beginAtZero: true
+                }
+            }
+            }
+        });
+
+
+        // Datepicker code written by ChatGPT
+
+        const datetimeInput = document.getElementById('datetime');
+        const output = document.getElementById('output');
+
+        // Example: Set minimum to current datetime
+        const now = new Date();
+        const isoString = now.toISOString().slice(0,16); // "YYYY-MM-DDTHH:MM"
+        datetimeInput.min = isoString;
+
+        // Show selected value
+        datetimeInput.addEventListener('change', () => {
+            output.textContent = `Selected: ${datetimeInput.value}`;
+        });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const hamburger = document.querySelector(".js-mobile-humbuger");
+    const headerElements = document.querySelector(".js-header-elements");
+
+    if (hamburger && headerElements) {
+      hamburger.addEventListener("click", function(event) {
+        event.preventDefault();  // Prevent default <a> behavior
+        headerElements.classList.toggle("hidden");
+      });
+    }
+  });
