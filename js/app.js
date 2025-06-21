@@ -80,3 +80,23 @@
       });
     }
   });
+
+
+  document.getElementById("cardJavaScriptInBody").innerHTML = "this is the javascript I write for testing purpose";
+
+
+  function myFunction() {
+    document.getElementById("javascriptFunctionFirst").innerHTML = "<p>This Paragraph changed while clicked the bottom button.</p>";
+  }
+
+
+  document.getElementById("javaScriptInnerText").innerText = "Hello World this is Javascript Inner Text updated live";
+
+
+
+let x, y, z;  // Statement 1
+x = 50;        // Statement 2
+y = 60;        // Statement 3
+z = x + y;    // Statement 4
+
+document.getElementById("javaScriptStatements").innerHTML = "The value of z is " + z + ".";  
