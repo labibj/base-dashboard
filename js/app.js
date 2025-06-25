@@ -100,3 +100,77 @@ y = 60;        // Statement 3
 z = x + y;    // Statement 4
 
 document.getElementById("javaScriptStatements").innerHTML = "The value of z is " + z + ".";  
+
+
+document.getElementById("javaScriptNumbers").innerHTML = 25.20;
+
+
+document.getElementById("javaScriptStrings").innerHTML = 'Labib Muhammad Jamal';
+
+
+let a;
+a = 6;
+document.getElementById("javaScriptVariables").innerHTML = a;
+
+document.getElementById("javaScriptOperators").innerHTML = (5 + 6) * 10;
+
+
+let p, j;
+p = 5;
+j = 6;
+document.getElementById("assigningJavaScriptValues").innerHTML = p + j;
+
+
+document.getElementById("javaScriptExpressions").innerHTML = 5 * 10;
+
+
+var h;
+h = 50;
+document.getElementById("expressionsComputeValues").innerHTML = h * 10;
+
+
+
+document.getElementById("expressionsComputeValuesStrings").innerHTML = "John" + " "  + "Doe";
+
+// let Keyword Creates Variables
+
+let r, u; // let Keyword Creates Variables
+r = 5 + 6; // Declare r, give it the value of 5 + 6 or 11
+u = r * 10;
+document.getElementById("letKeywordCreatesVariables").innerHTML = u;
+
+// var Keyword Creates Variables
+
+// var q, w;
+// q = 50 + 60;
+// w = q * 10;
+// document.getElementById("varKeywordCreatesVariables").innerHTML = w;
+
+
+
+var n = 5;
+var m = 6;
+var k = n + m;
+document.getElementById("javaScriptVariablesVar").innerHTML =
+"The value of k is: " + k;
+
+
+let g = 9;
+let v = 11;
+let i = g + v;
+document.getElementById("javaScriptVariableslet").innerHTML =
+"The value of i is: " + i;
+
+
+const q = 8;
+const l = 7;
+const d = q + l;
+document.getElementById("javaScriptVariablesconst").innerHTML =
+"The value of d is: " + d;
+
+
+const price = 3;
+const tax = 45;
+let total = price + tax;
+document.getElementById("javaScriptVariablesConstPrice").innerHTML =
+"The total is: " + total;
